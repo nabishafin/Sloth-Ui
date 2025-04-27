@@ -1,0 +1,111 @@
+.Contact-Office-section {
+    padding: 40px 0px 40px;
+
+}
+
+.Office-Details {
+    max-width: 1450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Office-Info {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* ভেতরের আইটেমগুলোকে কলামের শুরুতে সারিবদ্ধ করবে */
+}
+
+.Office-Info p {
+    text-align: start;
+    /* পি ট্যাগের টেক্সট বাম দিকে সারিবদ্ধ হবে */
+}
+
+.Office-Info h2 {
+    text-align: start;
+    margin: 0px;
+}
+
+.Office-Info h4 {
+    text-align: start !important;
+    color: #475569;
+    margin: 0px;
+}
+
+.Office-Info h6 {
+    text-align: start;
+    /* h6 ট্যাগের টেক্সট বাম দিকে সারিবদ্ধ হবে */
+
+}
+
+.section-tagline {
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #EEF2FF;
+    color: #4F46E5;
+    padding: 6px 10px;
+    border-radius: 16px;
+    display: inline-block;
+
+}
+
+.Office-Info h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.Office-Info h6 {
+    color: #777;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.office-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.office-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.office-card i {
+    color: #6495ED;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.office-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.office-card p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* ছোট ডিভাইসের জন্য রেসপন্সিভ ডিজাইন */
+@media (max-width: 768px) {
+    .office-card-container {
+        grid-template-columns: 1fr;
+
+    }
+
+
+}

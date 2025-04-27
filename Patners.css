@@ -1,0 +1,54 @@
+.Partners {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    columns: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #F8FAFC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.parters-child {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-ibm {
+    height: 40px;
+}
+
+.logo-adidas {
+    height: 50px;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .parters-child {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: calc(33.33% - 14px);
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .logo-ibm,
+    .logo-adidas {
+        height: auto;
+        width: calc(33.33% - 14px);
+    }
+}

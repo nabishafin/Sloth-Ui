@@ -1,0 +1,123 @@
+.Faq-section {
+    background-color: #F8FAFC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.faq-section {
+    background-color: #F8FAFC;
+    padding: 40px 20px;
+}
+
+.faq-container {
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-question span:first-child {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.faq-question .arrow {
+    font-size: 1.2em;
+    color: #777;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 15px 15px;
+    color: #555;
+    display: none;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto 0;
+
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question .arrow {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-question {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .faq-question span:first-child {
+        margin-bottom: 10px;
+    }
+
+    .faq-question .arrow {
+        margin-top: 10px;
+        align-self: flex-end;
+        font-size: 1.3em;
+    }
+
+    .faq-answer {
+        padding: 0 10px 10px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .container-Procrastinate {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .card-section-Procrastinate,
+    .image-section {
+        width: 100%;
+    }
+
+    .card-Procrastinate {
+        border-left: 2px solid #E0E7FF;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        width: auto;
+    }
+
+
+
+}

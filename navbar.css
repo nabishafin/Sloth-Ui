@@ -1,0 +1,148 @@
+.navbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    /* jate scroll korleo background thake */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a.active {
+    color: #4F46E5;
+    /* active color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 10px 0;
+    /* সামান্য প্যাডিং যোগ করা হলো */
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 0;
+    /* লিস্ট আইটেমের ডিফল্ট মার্জিন সরানো হলো */
+}
+
+.dropdown-menu ul li a {
+    display: block;
+    /* পুরো এরিয়া জুড়ে ক্লিক করা যাবে */
+    text-decoration: none;
+    color: #4F46E5;
+    /* ড্রপডাউন লিঙ্কের কালার পরিবর্তন করা হলো */
+    font-weight: 500;
+    padding: 8px 15px;
+    /* লিঙ্কের ভেতরের প্যাডিং */
+    transition: background-color 0.3s ease;
+    /* হোভারে হালকা ব্যাকগ্রাউন্ড পরিবর্তন ইফেক্ট */
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #f0f0f0;
+    /* হোভারে হালকা ধূসর ব্যাকগ্রাউন্ড */
+}
+
+.signup,
+.login {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup {
+    border: 1px solid gray;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.login {
+    background-color: #4F46E5;
+    color: #fff;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 5px 2px;
+
+    }
+
+    .nav-links,
+    .nav-buttons {
+        display: none;
+    }
+
+
+
+    .menu-icon {
+        display: block;
+    }
+
+}

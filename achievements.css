@@ -1,0 +1,62 @@
+.achievements-section {
+    background-color: #F8FAFC;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.achievements-section .icon {
+    color: #624bff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+
+
+.achievements-section p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.metric {
+    text-align: center;
+    border-right: 1px solid #CBD5E1;
+    padding-right: 40px;
+}
+
+.metric .number {
+    color: #4F46E5;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border: 1px sold blue;
+}
+
+.metric .label {
+    color: black;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+
+    .metrics-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .metric {
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #CBD5E1;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+}

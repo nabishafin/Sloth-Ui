@@ -1,0 +1,96 @@
+.container-Procrastinate {
+    max-width: 1450px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.Procrastinate {
+    max-width: 1450px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.Procrastinate-top h2 {
+    font-size: 40px;
+    margin: 4px;
+    padding: 0;
+}
+
+.Procrastinate-top h6 {
+    color: #475569;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 4px;
+    padding: 4px;
+}
+
+/* Card section */
+.card-Procrastinate {
+    width: 70%;
+}
+
+/* All cards */
+.card-Procrastinate {
+    border-left: 3px solid #E0E7FF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+/* First special card */
+.card-border-primary {
+    border-left: 3px solid #4F46E5;
+}
+
+/* Image section */
+.image-section {
+    width: 40%;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .container-Procrastinate {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: stretch;
+        /* Make items take full width */
+    }
+
+    .card-section-Procrastinate {
+        width: 100%;
+        /* Make card section full width */
+        margin-bottom: 20px;
+        /* Keep some spacing */
+    }
+
+    .card-Procrastinate {
+        width: auto
+    }
+
+    .image-section {
+        width: 100%;
+        /* Make image section full width */
+    }
+
+    .container-Procrastinate {
+        padding: 3px;
+    }
+
+
+    .Procrastinate-top {
+        margin: 2px;
+        padding-left: 2px;
+    }
+}
